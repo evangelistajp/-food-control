@@ -52,39 +52,6 @@ public class Add_ProdutoActivity extends MarshmallowActivity {
         activity = this;
     }
 
-//    public void actionAdd(View v) {
-//        Log.i("APP", "action add");
-//        String nome = Add_ProdutoActivity.this.nome.getText().toString();
-//        String cod = Add_ProdutoActivity.this.cod.getText().toString();
-//        String preco = Add_ProdutoActivity.this.preco.getText().toString();
-//        String compra = Add_ProdutoActivity.this.compra.getText().toString();
-//        String vencimento = Add_ProdutoActivity.this.vencimento.getText().toString();
-//
-//        if ( Validator.validateNotNull(this.cod,"Preencha o campo Codigo")&&
-//                Validator.validateNotNull(this.nome,"Preencha o campo nome")&&
-//                    Validator.validateNotNull(this.preco, "Preencha o campo Preço")){
-//            Intent it = new Intent();
-//
-//            it.putExtra("COD", cod);
-//            it.putExtra("NOME", nome);
-//            it.putExtra("PRECO", preco);
-//            if (Validator.isDataValida(this.compra,compra,"Data de compra de produto Inválida") &&
-//                    Validator.isDataValida(this.vencimento,vencimento, "Data de vencimento de produto Inválida")&&
-//                        Validator.isDataCompraAndVencimento(this.compra, Validator.convertStringForDate(compra) ,Validator.convertStringForDate(vencimento)
-//                                ,"Data de Compra inferior ao Vencimento")){
-//                it.putExtra("COMP", compra);
-//                it.putExtra("VENC", vencimento);
-//                setResult(RESULT_OK, it);
-//                finish();
-//            }else {
-//                Toast.makeText(Add_ProdutoActivity.this, "Erro na Data", Toast.LENGTH_SHORT).show();
-//                Log.i("APP", "action add INFORME A DATA");
-//            }
-//
-//        }
-//
-//    }
-
     public void actionAdd(View v) {
         Log.i("APP", "action add");
         String nome = Add_ProdutoActivity.this.nome.getText().toString();
