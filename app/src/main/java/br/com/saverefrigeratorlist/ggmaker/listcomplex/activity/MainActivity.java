@@ -68,60 +68,6 @@ public class MainActivity extends AppCompatActivity {
         Log.i("APP","onCreate MainActivity Depois " +produtoDAO.get());
     }
 
-//    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
-//        super.onActivityResult(requestCode, resultCode, it);
-//
-//        Log.i("APP","MainActivity onActivityResult resultado voltou ");
-//        if (resultCode == RESULT_OK){
-//            if (requestCode == ADD){
-//                String codigo = intent.getStringExtra("COD");
-//                String nome = intent.getStringExtra("NOME");
-//                String preco = intent.getStringExtra("PRECO");
-//                String data_inc = intent.getStringExtra("COMP");
-//                String data_venc = intent.getStringExtra("VENC");
-//                //TODO verificar isso
-//                Log.i("APP", "MainActivity onActivityResult  codigo do produto " + codigo);
-//                Log.i("APP", "MainActivity onActivityResult  nome do produto " + nome);
-//                Log.i("APP", "MainActivity onActivityResult  preco do produto " + preco);
-//                Log.i("APP", "MainActivity onActivityResult  data de Compra " + data_inc);
-//                Log.i("APP", "MainActivity onActivityResult  data de vencimento " + data_venc);
-//
-//
-//                try {
-//                    Double dpreco = Double.parseDouble(preco);
-//                    if (dpreco == null){
-//                        dpreco = 0.0;
-//                        Log.i("APP", "MainActivity onActivityResult  preco do produto NULL " + preco);
-//                    }
-//                    Date date_in = (Date) Validator.formataStringDate(data_inc);
-//                    Date date_ven = (Date) Validator.formataStringDate(data_venc);
-//
-//
-//
-//                    produto = new Produto(codigo,nome,dpreco,date_in,date_ven);
-//                } catch (ParseException e) {
-//                    Log.e("APP", "MainActivity onActivityResult  ERRO na converção ");
-//                    e.printStackTrace();
-//                } catch (Exception e) {
-//                    Log.e("APP", "MainActivity onActivityResult  ERRO na converção ");
-//                    e.printStackTrace();
-//                }
-//
-//
-//                Log.i("APP", "MainActivity onActivityResult Produto add :"+ produto.toString());
-//                //lista.add(produto);
-//			    this.produtoDAO.inserir(produto);
-//                this.atualizaAdapter();
-//
-//                Toast.makeText(this, produto.getNome() +" adicionado com sucesso", Toast.LENGTH_SHORT).show();
-//            }
-//            if (requestCode == UPGRADE){
-//
-//
-//            }
-//        }
-//    }
-
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, it);
         Log.i("APP","MainActivity onActivityResult resultado voltou ");
