@@ -42,8 +42,7 @@ public class Upgrade_ProdutoActivity extends AppCompatActivity {
 
         this.produto = (Produto) intent.getSerializableExtra("PRODUTO");
 
-        //TODO verificar isso
-       Log.i("APP", "UPgrade_ProdutoActivity onActivityResult  PRODUTO " + produto.toString());
+        Log.i("APP", "UPgrade_ProdutoActivity onActivityResult  PRODUTO " + produto.toString());
 
         this.nome.setText(produto.getNome());
         this.cod.setText(produto.getCodigo());
